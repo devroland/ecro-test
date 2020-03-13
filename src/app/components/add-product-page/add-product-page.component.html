@@ -1,0 +1,445 @@
+<div class="add-product-page">
+    <div class="product-menu-section">
+        <h3>Меню “Ассортимент”</h3>
+        <ul>
+            <li>
+                <a href="#">Товары</a>
+            </li>
+            <li>
+                <a href="#">Акции и скидки</a>
+            </li>
+            <li>
+                <a href="#">Автоматическая загрузка</a>
+            </li>
+        </ul>
+    </div>
+    <div class="add-product-section">
+        <h1>Добивить товар</h1>
+        <div class="add-product-section-wrapper">
+            <div class="add-product-info-form">
+                <div class="form-group">
+                    <label for="product-title">Название</label>
+                    <input type="text" name="product_title" placeholder="Введите название товара" id="product-title" />
+                    <span class="validation-message">Не более 250 символов</span>
+                </div>
+
+                <div class="form-group category-group">
+                    <label for="product-category">Категория</label>
+                    <select id="product-category" name="product_category">
+                        <option>Выбрать</option>
+                        <option value="1">Music</option>
+                        <option value="2">Car</option>
+                        <option value="3">Films</option>
+                        <option value="4">Mobiles</option>
+                    </select>
+                </div>
+
+                <div class="form-group category-group">
+                    <label>Фотографии</label>
+                    <span class="tooltip with-arrow">Это фото буде первым на обложке</span>
+
+                    <div class="products-image-box">
+                        <div class="product-image-box">
+                            <input type="file" name="product_image[]" />
+                            <div class="product-image-preview uploaded" style="background-image: url('../../../assets/images/product_image.jpg')">
+                                <div class="add-image-btn"></div>
+                            </div>
+                        </div>
+                        <div class="product-image-box">
+                            <input type="file" name="product_image[]" />
+                            <div class="product-image-preview uploaded" style="background-image: url('../../../assets/images/product_image.jpg')">
+                                <div class="add-image-btn"></div>
+                            </div>
+                        </div>
+                        <div class="product-image-box">
+                            <input type="file" name="product_image[]" />
+                            <div class="product-image-preview">
+                                <div class="add-image-btn"></div>
+                            </div>
+                        </div>
+                        <div class="product-image-box">
+                            <input type="file" name="product_image[]" />
+                            <div class="product-image-preview">
+                                <div class="add-image-btn"></div>
+                            </div>
+                        </div>
+                        <div class="product-image-box">
+                            <input type="file" name="product_image[]" />
+                            <div class="product-image-preview">
+                                <div class="add-image-btn"></div>
+                            </div>
+                        </div>
+                        <div class="product-image-box">
+                            <input type="file" name="product_image[]" />
+                            <div class="product-image-preview">
+                                <div class="add-image-btn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-video">Видео</label>
+                    <span class="tooltip">Вы можете добавить видео товара, для этого нужно прикрепить ссылку с адресом где находится видео</span>
+                    <input type="text" name="product_video" placeholder="Добавте ссылку на видео" id="product-video" />
+                </div>
+
+                <div class="form-group">
+                    <label for="product-brand">Бренд</label>
+                    <select id="product-brand" name="product_brand">
+                        <option>Выбрать</option>
+                        <option value="1">Apple</option>
+                        <option value="2">Samsung</option>
+                        <option value="3">Beko</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Описание</label>
+                </div>
+
+                <div class="form-group code">
+                    <div class="pull-left">
+                        <label for="stroke-code">Штрих код</label>
+                        <div class="products-image-box">
+                            <div class="product-image-box">
+                                <input type="file" name="stroke_code"  id="stroke-code"/>
+                                <div class="product-image-preview">
+                                    <div class="add-image-btn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pull-left">
+                        <label for="qr-code">QR код</label>
+                        <div class="products-image-box">
+                            <div class="product-image-box">
+                                <input type="file" name="qr_code"  id="qr-code"/>
+                                <div class="product-image-preview">
+                                    <div class="add-image-btn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="add-product-specifications">
+                <div class="specification-table">
+                    <h3>Праметры их значение</h3>
+
+                    <div class="specification-param-table">
+                        <div class="row header">
+                            <div class="spec-prm">Параметры</div>
+                            <div class="spec-prm">Значение</div>
+                            <div class="spec-prm">Влияет на цену</div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Цвет</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <span>Красный</span>
+                                    <span>Зеленый</span>
+                                    <span>Черный</span>
+                                    <div class="add-btn"></div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                                <input type="checkbox" id="chk1" name="chk1">
+                                <label for="chk1"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Размер</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <span>M</span>
+                                    <span>L</span>
+                                    <span>XL</span>
+                                    <div class="add-btn"></div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                                <input type="checkbox" checked id="chk2" name="chk2">
+                                <label for="chk2"></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Ткань</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <div class="add-btn-with-text">
+                                        <div class="add-btn"></div>
+                                        <p>Добавить</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Производитель</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <div class="add-btn-with-text">
+                                        <div class="add-btn"></div>
+                                        <p>Добавить</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Предназначение</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <div class="add-btn-with-text">
+                                        <div class="add-btn"></div>
+                                        <p>Добавить</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Пол</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <div class="add-btn-with-text">
+                                        <div class="add-btn"></div>
+                                        <p>Добавить</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="spec-prm spec-prm-title">Линейка</div>
+                            <div class="spec-prm">
+                                <div class="arguments">
+                                    <div class="add-btn-with-text">
+                                        <div class="add-btn"></div>
+                                        <p>Добавить</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-prm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specification-table">
+                    <h3>Цены</h3>
+
+                    <div class="specification-param-table">
+                        <div class="row price header">
+                            <div class="spec-prm">Цвет</div>
+                            <div class="spec-prm">Размер</div>
+                            <div class="spec-prm">Материал</div>
+                            <div class="spec-prm">Цена US $</div>
+                        </div>
+                        <div class="row price-content">
+                            <div class="spec-prm">Красный</div>
+                            <div>
+                                <div class="multi-spec">
+                                    <div class="col"><div class="spec-prm">Размер: М</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">1.46</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="multi-spec">
+                                    <div class="col"><div class="spec-prm">Размер: L</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="multi-spec">
+                                    <div class="col nb-b"><div class="spec-prm">Размер: XL</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm nb-b">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm nb-b">Цена</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row price-content">
+                            <div class="spec-prm">Цвет: Зелений</div>
+                            <div>
+                                <div class="multi-spec">
+                                    <div class="col"><div class="spec-prm">Размер: М</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="multi-spec">
+                                    <div class="col"><div class="spec-prm">Размер: L</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="multi-spec">
+                                    <div class="col nb-b"><div class="spec-prm">Размер: XL</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm nb-b">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm nb-b">Цена</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row price-content">
+                            <div class="spec-prm">Цвет: Черный</div>
+                            <div>
+                                <div class="multi-spec">
+                                    <div class="col"><div class="spec-prm">Размер: М</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="multi-spec">
+                                    <div class="col"><div class="spec-prm">Размер: L</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                    </div>
+                                </div>
+                                <div class="multi-spec nb-b">
+                                    <div class="col nb-b"><div class="spec-prm">Размер: XL</div></div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Материал: Кожа</div>
+                                        <div class="spec-prm">Материал: Замша</div>
+                                        <div class="spec-prm nb-b">Материал: Кожзам</div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm">Цена</div>
+                                        <div class="spec-prm nb-b">Цена</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="product-specifications-section">
+        <div class="specifications-body">
+            <h3>Macbook Pro 13 "i5 8G 256G с сенсорной панелью</h3>
+            <p class="specification-price">US $2,456 - US $2,456</p>
+
+            <div class="specification">
+                <p class="specification-title">Бренд</p>
+
+                <div class="specification-brand">
+                    <img src="../../../assets/images/apple-brand.svg" />
+                    <p>Apple Inc.</p>
+                </div>
+            </div>
+
+            <div class="specification">
+                <p class="specification-title">Диагональ</p>
+                <span class="specification-box">13,9”</span>
+                <span class="specification-box">14,9”</span>
+                <span class="specification-box">16,8”</span>
+            </div>
+
+            <div class="specification size">
+                <p class="specification-title">Память</p>
+                <span class="specification-box">512 DDR</span>
+                <span class="specification-box">1024 DDR</span>
+            </div>
+
+            <div class="specification specification-info">
+                <p class="specification-title spc-name">Характеристики</p>
+                <p class="specification-name">Название характеристики: <span>Значение</span></p>
+                <p class="specification-name">Название характеристики: <span>Значение</span></p>
+                <p class="specification-name">Название характеристики: <span>Значение</span></p>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="specifications-footer">
+            <span class="save">Сохранить товар</span>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

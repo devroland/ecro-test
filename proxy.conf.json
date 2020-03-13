@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target_dev": "http://localhost:8070",
+    "target": "http://ecro.lexoner.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
